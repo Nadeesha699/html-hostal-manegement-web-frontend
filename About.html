@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="bootstrap\css\bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-grid.min.css">
+    <script src="bootstrap/js/bootstrap.js"></script> 
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <!--icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Poppins:ital,wght@0,300;0,400;0,500;1,200;1,300;1,400&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            background-image: url(img/Welcome.jpg);
+            font-family: 'Times New Roman', Times, serif;
+        }
+  #navv{
+    right: 0px;
+  }
+  .my-navbar{
+  width:100%;
+  padding:20px 20px;
+  background-color: #0B1426;
+  position:absolute;
+  top:20px;
+  left:0;
+  z-index:999;
+  box-shadow:0px 2px 10px rgba(0,0,0,0.2);
+  }
+  
+  .nav-item .nav-link{
+  font-family:'Oswald', sans-serif;
+  font-size:15px;
+  font-weight:300;
+  text-transform:uppercase;
+  margin:0px 10px;
+  position:relative;
+  color:white;
+  }
+  
+  .nav-item .nav-link:before{
+  position:absolute;
+  left:1000;
+  content:"";
+  bottom:1000;
+  width:100%;
+  height:2px;
+  transform:scaleX(0);
+  transform-origin:left;
+  background-color:brown;
+  transition:0.5s;
+  }
+  
+  
+    .nav-item .nav-link:hover:before{
+	  transform:scaleX(1);
+  transform-origin:right;
+	}
+	.navbar-brand{
+	text-transform:capitalize;
+	color:#2f3542;
+	font-style:italic;
+	font-family:'Oswald', sans-serif;
+	font-weight:bold;
+    width: 190px;
+    height: 80px;
+	}
+	
+	.navbar-scroll{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	background-color:rgba(255,138,0,1);
+	padding:5px 20px;
+	transition:0.5s;
+	animation:scroll 0.6s 1;
+	}
+	
+	@keyframes scroll{
+	0%{transform:translateY(-100%);}
+	100%{transform:translateY(0%);}
+	}
+        h1{
+            font-size: 60px;
+            color: #f8f9fa;
+            margin-top: 250px;
+        }
+        p{
+            font-size: 17px;
+            color: #f8f9fa;
+        }
+        h3{
+            font-size: 40px;
+            color: #0dcaf0;
+        }
+        .col-md-5{
+            margin-top: 200px;
+            margin-left: 400px;
+            box-shadow: -1px 1px 60px 10px black;
+            background: rgb(0,0,0,0.4);
+        }
+        .lable{
+            font-weight: normal;
+            margin-top: 15px;
+            color: white;
+            font-size: 19px;
+        }
+        .form-control{
+            background: transparent;
+            border-radius: 0px;
+            border: 0px;
+            border-bottom: 1px solid white;
+            font-size: 18px;
+            margin-top: 15px;
+            height: 40px;
+            color: white;
+        }
+        input[type="checkbox"]{
+            margin-top: 15px;
+            width: 15px;
+            height: 15px;
+        }
+        small{
+            font-size: 18px;
+            color: white;
+        }
+        input[type="radio"]{
+            margin-top: 22px;
+        }
+        .btn-info{
+            margin-top: 20px;
+            font-size: 18px;
+            width: 120px;
+            margin-left: 80px;
+            margin-bottom: 20px;
+        }
+        .btn-warning{
+            margin-top: 20px;
+            font-size: 18px;
+            width: 120px;
+            margin-left: 80px;
+            margin-bottom: 20px;
+        }
+		.page-wrapper{
+	   min-height:100%
+	   }
+	   
+	   
+	   .footer{
+	   background color:#0B1426;
+	   height:200px;
+	   }
+	   
+	   
+	   .footer.footer-content{
+	   border:1px solid red;
+	   height:350px;
+	   display:flex;
+	   }
+	   
+	   .fotter .fotter-content .fotter-section{
+	   flex:1;
+	   padding:25px;
+	   border;1px solid white;
+	   }
+    </style>
+</head>
+<body>
+  <div class="container-fluid menu">
+        <nav class="navbar navbar-expand-lg my-navbar">
+      
+     
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav m-auto" id="navv">
+          <li class="nav-item active">
+            <a class="nav-link" href="Home.html">Home <span class="sr-only"></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="About.html">About Us</a>
+          </li>
+            <li class="nav-item">
+            <a class="nav-link" href="registration_form.html">Register Now</a>
+          </li>
+            <li class="nav-item">
+            <a class="nav-link" href="userupdate_form.html">Update Profile</a>
+          </li>
+            <li class="nav-item">
+            <a class="nav-link" href="Fines.html">Fine</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+ </div>
+<br> <br> <br> <br> <br> <br>   
+<div class="row mx-5">
+            <h1><center><b>Welcome <br>to the <br>Waymba University Of Sri Lanka<br><br></b><center></h1>
+			<br><br>
+			<br><br>
+			
+            <div class="row vehicle">
+                <div class="col-md-6 col-lg-4 item">
+                       
+					    <h3>Visson</h3>
+                        <p><br><b>To be the center of excellence in technology education,<br> innovations, <br>and research and developments through outstanding academic programme</b><br><br></p>
+                    
+                </div>
+				<div class="col-md-6 col-lg-4 item">
+                    
+                        <h3>Misson</h3>
+                        <p><br><b>To produce highly qualified graduate technologists capable of creating innovative, viable, sustainable and ethical solutions to the real-world technological problems</b><br><br></p>
+                    
+                </div>
+				
+</div>	
+</div>			
+				
+<div class="row mx-5" id="topcon">
+            <h1 id="vehiheder">Our university<h1>
+            <div class="row vehicle">
+                <div class="col-md-6 col-lg-4 item">
+                    <div class="box"><img class="card-img-top" src="img/SC.jpg">
+                        <h3>Student Center</h3>
+                        <p><b>You can studie freely!<br><br>
+
+You can find all the equipment you need for learning with a free wifi device<br><br>Open 24 hours. Able to study with friends or individually and use the upstairs section to do extracurricular activities</b></p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 item">
+                    <div class="box"><img class="card-img-top" src="img/audi.jpg">
+                        <h3>Auditorium</h3>
+                        <p><b>Affordable & Reliable<br><br>
+
+The beautiful Pandit Amaradeva Auditorium in Sri Lanka wayamba university is the most beautiful place and can use all the functions</b> <br><br></p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 item">
+                    <div class="box"><img class="card-img-top" src="img/Indor.jpg">
+                        <h3>Indoor Stadiium</h3>
+                        <p><b>You will be able to show your skills in the indoor stadium. All types of sports are available in our university and here you can play almost all indoor sports.</b></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+	
+		 
+		 <div class="row mx-5">
+                <div class="col-md-6 col-lg-4 item">
+                 
+                        <h3 font="Arial Black"><br>Faculties</h3>
+                        <p><br>
+						Faculty of Business Studies and Finance<br>
+			            Faculty of Technology<br>
+						Faculty of Applied Sciences<br>
+						Faculty of Livestock, Fisheries & Nutrition<br>
+						Faculty of Agriculture and Plantation Management<br>
+						Faculty of Medicine<br>
+						</p>
+                    
+                </div>
+				
+                       <div class="row mx-5" id="topcon">
+                        <h3 font="Arial Black"><br>Hostal Facilities</h3>
+                        <p align="center"><b><i><br>>>Hostel facilities typically refer to accommodations provided by educational institutions or other organizations for students or travelers who need a place to stay temporarily. Hostels often offer shared dormitory-style rooms with bunk beds, communal areas, and shared facilities such as bathrooms, kitchens.</i></b></p><br>
+						
+                        <p align="center"><b><i>>>Every student can stay at hostals untill there academic works will be finishing.</i></b></p><br>
+						
+						<p align="center"><b><i>>>Our university has a maximum of 6 hostel buildings per one premises</i><b>(Kuliyapitiya,Makandura,Labuyaya)</b> <i>and a maximum of 100 rooms in one hostel building.</i></b></p>
+						
+						<p><u>Common features and amenities found in hostel facilities may include:</u></p>
+						
+						<ol style="color: #f8f9fa">
+						<li>Dormitory rooms: Hostels usually have dormitory-style rooms with bunk beds or single beds, accommodating multiple guests in one room. Some hostels also offer private rooms.</li>
+
+                        <li>Common areas: Hostels often have common areas such as lounges, TV rooms, or outdoor spaces where guests can relax, socialize, or work.</li>
+
+                        <li>Shared facilities: Bathrooms, showers, and toilets are typically shared among guests. Kitchens and dining areas are also commonly available for guests to cook and enjoy meals together.</li>
+
+                        <li>Security: Hostels prioritize the safety of their guests and may provide security measures such as lockers, keycard access, or 24-hour front desk services.</li>
+
+                        <li>Social activities: Some hostels organize social activities, such as city tours, pub crawls, or game nights, to encourage interaction among guests and create a vibrant social atmosphere.</li>
+
+                        <li>It's important to note that specific amenities and services may vary from hostel to hostel, so it's advisable to check the facilities provided by a particular hostel before making a reservation.</li>
+						</ol>
+                      </div>
+					  <br>
+					  <div class="row mx-5" id="topcon">
+                       <h3 font="Arial Black"><br>Rules & Regulations</h3>
+					   
+					   <p align="center"><b><i>Rules and regulations for hostel students can vary depending on the specific hostel and the institution or organization that manages it. However, here are some common rules and regulations that are often implemented in hostel facilities:</i></b></p>
+
+                        <ul style="color: #f8f9fa">
+                        <li>Curfew: Hostels may have a curfew that specifies the time by which students must return to the hostel in the evening or night. This rule is usually in place to ensure the safety and security of the students.</li><br>
+
+                        <li>Noise and disturbance: Hostels typically have rules regarding noise levels and disturbances to ensure a peaceful environment for all residents. Quiet hours may be established during specific times of the day.</li><br>
+
+                        <li>Maintenance and cleanliness: Students are generally expected to keep their living spaces clean and tidy. Hostels may have guidelines for maintaining cleanliness and proper waste disposal. Regular inspections and cleaning schedules may also be implemented.</li><br>
+
+                        <li>Prohibited items: Hostels may have a list of items that are not allowed within the premises, such as alcohol, drugs, weapons, or flammable materials. This helps maintain a safe and controlled environment.</li><br>
+
+                        <li>Safety and security: Students are often required to follow safety protocols, such as not tampering with fire safety equipment, reporting any suspicious activities, or adhering to evacuation procedures during emergencies.</li><br>
+
+                        <li>Respect for others: Hostel residents are expected to show respect and consideration towards their fellow residents. This includes being mindful of cultural differences, personal space, and refraining from any form of harassment or discrimination.</li><br>
+
+                        <li>Attendance and academic progress: In the case of hostel facilities associated with educational institutions, there may be regulations regarding attendance and academic progress. Students may be required to maintain a certain level of academic performance to continue residing in the hostel.</li>
+						</ul
+                    </div>
+
+
+                
+		</div>		
+<hr><hr>
+
+<!--fotter -->
+<div class="footer">
+  <div class= "footer-content"></div>
+ <div class="footer-section about">
+  <h5 class="logo text"><span>HMS</span></h5>
+  <p>Everything You need <br>to know contact us for more details</p>
+  <div class="contact">
+    <span style="color: #f8f9fa;"><i class="fas fa-phone"></i> &nbsp; +(94)765678888</span>
+	<span style="color: #f8f9fa;"><a href="info@wyb.ac.lk."></a><i class="fas fa-email"></i> &nbsp; info@wyb.ac.lk.</span>
+  </div>
+  <div class="socials" style="color: #f8f9fa;">
+    <a href="https://www.facebook.com/wuslofficial/"><i class="fab fa-facebook">www.facebook.com</i></a><br>
+    <a href="https://twitter.com/wybofficial?lang=en"><i class="fab fa-twitter">www.twitter.com</i></a><br>
+	<a href="https://www.youtube.com/channel/UCCC3sx1ispa_2wCA3EYBotw"><i class="fab fa-youtube">www.youtube.com</i></a>
+  </div>
+</div>
+ 
+  <div class="footer-section contact-form">
+  <h2 style="color: #f8f9fa;">Contact us</h2>
+  <br>
+ 
+ 
+  
+ </div>
+</div>
+
+
+</body>
